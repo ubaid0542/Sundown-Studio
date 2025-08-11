@@ -1,0 +1,296 @@
+@media (max-width:600px){
+    #page1{
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0 5vw;
+    }
+    nav{
+        padding: 8vw 3vw;
+        background-color: #EFEAE3;
+
+    }
+    nav img{
+        scale:8vh;
+        transition: all ease 0.3s;
+    }
+    #nav-2{
+        display: none;
+    }
+    nav h3{
+        display: block;
+        padding: 3vw 5vw;
+        border: 1px solid #ababab;
+        border-radius: 50px;
+        font-size: 4vw;
+        font-weight: 300;
+        padding-left: 10vw;
+
+    }
+
+    #center{
+    width: 100%;
+    height: 62vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 8vw 0;
+    border-bottom: 1px solid black;
+    flex-direction: column-reverse;
+    position: relative;
+    z-index: 9;
+}
+#left h3{
+    width: 80%;
+    font-size: 5.8vw;
+    line-height: 7vw;
+    
+    
+}
+#right h1{
+    font-size: 17vw;
+    line-height: 17vw;
+    text-align: right;
+}
+#page1 video{
+    width: 92%;
+    height: 70vh;
+    object-fit:cover;
+    margin-left: 4%;
+    border-radius: 10%;
+    margin-top: 4vw;
+    position: relative;
+}
+#hero-shape {
+    position:absolute;
+    width: 82vw;
+    height: 55vw;
+    right: 0;
+    top: 65vh;
+}
+
+#page2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFEAE3;
+    padding: 8vw 0;
+    position: relative;
+}
+#moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#moving-text::-webkit-scrollbar{
+    display: none;
+}
+.con{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: move;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#moving-text h1{
+    
+    font-size: 15vw;
+    display: inline-block;
+}
+.gola{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #FE320A;
+    margin: 1vw 2vw;
+    padding: 2vw 0;
+}
+
+    #page2-bottom{
+    height: 90vh;
+    width: 100%;
+    padding: 10vw 4vw ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+}
+    #page2-bottom h1{
+        font-size: 9vw;
+        width: 100%;
+        line-height: 9vw;
+    }
+    #bottom-part2{
+        margin-top: 18vw;
+        width: 70%;
+    }
+    #bottom-part2 img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    #bottom-part2 p{
+        
+        font-weight:400;
+        margin-top: 2vw;
+        font-size: 3.5vw;
+    }
+    #page2 #guiee1{
+    width: 70vw;
+    height: 70vw;
+    background:radial-gradient(#fc2b01,#f65130);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    filter: blur(20px);
+    animation-name: guiee;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    }
+    @keyframes guiee {
+        from{
+            transform: translate(-10%,10%) skew(0); /*skew are used for change the shape*/
+        }
+        to{
+            transform: translate(10%,-10%) skew(-12deg);
+        }
+        
+    }
+    #product{
+        display: flex;
+        position: absolute;
+        left: 2vw;
+        top: 99%;
+        gap: 1vw;
+    }
+    #dot{
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: #FE320A;
+    }
+    /* Footer */
+    #footer{
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    }
+    #footer h1{
+        color: white;
+        font-size: 22vw;
+        position: relative;
+        right: 9%;
+        z-index: 9;
+    }
+    #footer_div{
+        height: 65vh;
+        width: 100%;
+        background-color: red;
+        position: absolute;
+        top: 0%;
+        filter: blur(25px);
+        z-index:9;
+
+    }
+    #footer_div2{
+        width: 35vw;
+        background-color: red;
+        height: 35vw;
+        position: absolute;
+        top: 55%;
+        right: 30%;
+        rotate: 45deg;
+        border-radius: 20px;
+        filter: blur(25px);
+        animation-name: footer_guiee;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes footer_guiee{
+        from{
+            transform: translate(-8%,10%) skew(-30deg);
+        }
+        to{
+            transform: translate(10%,-8%)skew(30deg);
+        }
+    }
+    #footer-bottom{
+        border-top: 1px solid #dadada;
+        height: 10vh;
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10vw;
+        padding: 0 5vw;
+    }
+    #footer-bottom p{
+        margin-top: 1vw;
+        
+    }
+
+    /* Loader */
+    #loader{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #000;
+        z-index: 999;
+        top: 0;
+        transition: all linear 1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #loader h1{
+        color: transparent;
+        font-size: 8vw;
+        background:linear-gradient(to right,orange,orangered);
+        -webkit-background-clip: text;  /* for gradient font*/
+        position: absolute;
+        opacity: 0;
+        animation-name: load;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+    }
+
+    #loader h1:nth-child(2){
+        animation-delay: 2.2s;
+    }
+    #loader h1:nth-child(3){
+        animation-delay: 3.4s;
+    }
+    #loader h1:nth-child(4){
+        animation-delay: 4.5s;
+        animation-duration: 2s;
+    }
+    @keyframes load {
+        0%{
+            opacity: 0;
+        }
+        10%{
+            opacity: 1;
+        }
+        90%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+}
