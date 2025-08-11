@@ -1,4 +1,4 @@
-#Sundown Studio
+# Sundown Studio
 # 🌐 Responsive Webpage with Locomotive.js, Swiper.js & GSAP
 
 This project is a fully responsive modern webpage built with **HTML**, **CSS**, and **JavaScript**, enhanced with smooth scrolling animations using **Locomotive.js**, engaging sliders with **Swiper.js**, and creative motion effects with **GSAP**.
